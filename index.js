@@ -218,3 +218,31 @@ function possitiveNumber(numbers) {
 
 var getPossitiveNumbers = possitiveNumber(numbers);
 console.log(getPossitiveNumbers);
+
+
+function picnicCost(totalMan) {
+    var firstBudget = 5000;
+    var secondBudget = 4000;
+    var thirdBudget = 3000;
+    if (totalMan <= 100) {
+        var firstPicnicBudget = totalman * firstBudget;
+        return firstPicnicBudget;
+    }
+    else if (totalMan <= 200) {
+        var firstPicnicBudget = 100 * firstBudget;
+        var moreMan = totalMan - 100;
+        var secondpicnicBudget = moreMan * secondBudget;
+        var fullBudget = firstPicnicBudget + secondpicnicBudget;
+        return fullBudget;
+    }
+    else {
+        var firstPicnicBudget = 100 * firstBudget;
+        var secondpicnicBudget = 100 * secondBudget;
+        var moreMan = totalMan - 200;
+        var thirdPicnicBudget = moreMan * thirdBudget;
+        var fullBudget = firstPicnicBudget + secondpicnicBudget + thirdPicnicBudget;
+        return fullBudget;
+    }
+}
+const totalBudget = picnicCost(400);
+console.log(totalBudget);
