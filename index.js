@@ -274,3 +274,29 @@ function pandaCost(singara, somucha, jilapi) {
 }
 var foodPrice = pandaCost(2, 2, 1);
 console.log(foodPrice);
+
+// 4 problem
+
+var friendsName = ['Urmi', 'Moli', 'Nadia', 'Sharif', 'Shawon'];
+
+function oddFriend(friendsName) {
+    var friend = '';
+    for (let i = 0; i < friendsName.length; i++) {
+        console.length(friendsName);
+    }
+    return friendsName;
+}
+
+var friendsName = ['Urmi', 'Moli', 'Shawon', 'Sharif', 'Nadia'];
+
+function oddFriend(friendsName) {
+    let odd = friendsName[0];
+    for (var i = 1; i < friendsName.length; i++) {
+        if (friendsName[i] != friendsName[0]) {
+            odd = friendsName[i];
+        }
+    }
+    return odd;
+}
+var oddName = oddFriend(friendsName);
+console.log(oddName);
