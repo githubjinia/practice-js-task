@@ -246,3 +246,31 @@ function picnicCost(totalMan) {
 }
 const totalBudget = picnicCost(400);
 console.log(totalBudget);
+
+
+// 1 problem
+
+
+function anaToVori(ana) {
+    var vori = ana / 16;
+    return vori;
+}
+
+var ana = anaToVori(32);
+console.log(ana);
+
+
+// 2 problem
+
+function pandaCost(singara, somucha, jilapi) {
+    var singaraPrice = 7;
+    var somuchaPrice = 10;
+    var jilapiPrice = 15;
+    var totalSingaraPrice = singaraPrice * singara;
+    var totalSomuchaPrice = somuchaPrice * somucha;
+    var totalJilapiPrice = jilapiPrice * jilapi;
+    var totalPrice = totalSingaraPrice + totalSomuchaPrice + totalJilapiPrice;
+    return totalPrice;
+}
+var foodPrice = pandaCost(2, 2, 1);
+console.log(foodPrice);
